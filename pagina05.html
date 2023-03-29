@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Tarea Laboratorio 01</title>
+
+</head>
+
+<center>
+
+    <body class="todo">
+        <h1>ACME</h1>
+        <ul class="menu">
+          <li><a href="/index">Inicio</a></li>
+          <li><a href="/pagina02">Nosotros</a></li>
+          <li><a href="/pagina03">Nuestros Servicios</a></li>
+          <li><a href="/pagina04">Catalogo de Clientes</a></li>
+          <li><a href="/pagina05">Contactenos</a></li>
+        </ul>
+
+        <br>
+        
+        <h2>Contactenos</h2>
+        <form action="submeter-formulario.php" method="post">       
+  
+              
+            <p>
+              <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</span>
+              </label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+          
+            <p>
+              <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+              </label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+        
+            <p>
+              <label for="telefone" class="colocar_telefono">Telefono
+              </label>
+                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>    
+          
+            <p>
+              <label for="website" class="colocar_website">Sitio web
+              </label>
+                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+            </p>    
+          
+            <p>
+              <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+              </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+            </p>    
+          
+            <p>
+              <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+              </label>                     
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>                    
+          
+                            <input type="button" value="Enviar">
+
+            <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>          
+        
+      </form>
+
+</center>
+</body>
+
+<style type="text/css" media="screen">
+    p {
+        width: 800px;
+        aspect-ratio: auto 800 / 100;
+        height: 100px;
+    }
+
+    .nuevo {
+        width: 139px;
+        height: 200px;
+        margin-left: 6px;
+    }
+
+    .todo {
+        font-family: arial, Arial, Helvetica;
+        background: olivedrab;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        background: goldenrod;
+        width: 90%;
+        max-width: 1000;
+        margin: auto;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        display: block;
+
+    }
+
+    .menu li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .menu li a:hover {
+        background: black;
+    }
+    .clientes{
+        display: inline-flex;
+    }
+</style>
+
+</html>
